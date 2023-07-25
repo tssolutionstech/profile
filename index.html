@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile_ts_solutions_tech</title>
+
+    <!-- BS4 CSS -->
+    <!-- C1: CDN -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+
+    <!-- C2: Download files -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- C3: NPM (Node.js) -->
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- BASE CSS -->
+    <link rel="stylesheet" href="./css/base.css">
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div
+        class="header__top d-flex justify-content-between align-items-center container-fluid py-2"
+      >
+        <div class="header__left">
+          <a href="tel:0961051014" class="text-white mr-4"
+            ><i class="fas fa-phone-alt"></i> 096.105.1014</a
+          >
+          <a href="mailto:info@cybersoft.edu.vn" class="text-white"
+            ><i class="far fa-envelope"></i> info@cybersoft.edu.vn</a
+          >
+        </div>
+        <div class="header__right">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <nav class="navInstruction navbar navbar-expand-md container">
+        <a class="navbar-brand text-center" href="#">
+          <img class="header__logo" src="./img/logo-primary.png" alt="logo">
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarInstruction"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarInstruction">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Trang Chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">GALLERY</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                PAGES
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Codes</a>
+                <a class="dropdown-item" href="#">Icons</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- CAROUSEL -->
+    <!-- section.cyberCarousel -->
+    <section class="cyberCarousel">
+      <!-- data-ride="carousel" -->
+      <div id="carouselCyber" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselCyber"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselCyber" data-slide-to="1"></li>
+          <li data-target="#carouselCyber" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/banner1.jpg" class="d-block w-100" alt="banner1" />
+            <div class="container carousel-caption">
+              <h1>Graphic Work Designing</h1>
+              <p>
+                Any successful career starts with good education. Together with
+                us you will have deeper knowledge of the subjects
+              </p>
+              <button class="btn">
+                Read More <i class="fa fa-angle-double-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/banner2.jpg" class="d-block w-100" alt="banner2" />
+            <div class="container carousel-caption">
+              <h1>Financial Analyst Course.</h1>
+              <p>
+                Any successful career starts with good education. Together with
+                us you will have deeper knowledge of the subjects
+              </p>
+              <button class="btn">
+                Read More <i class="fa fa-angle-double-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/banner3.jpg" class="d-block w-100" alt="banner3" />
+            <div class="container carousel-caption">
+              <h1>Digital Marketing Course.</h1>
+              <p>
+                Any successful career starts with good education. Together with
+                us you will have deeper knowledge of the subjects
+              </p>
+              <button class="btn">
+                Read More <i class="fa fa-angle-double-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselCyber"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselCyber"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <!-- WELCOME -->
+    <section class="welcome section">
+      <div class="heading">
+        <h2>WELCOME TO EDUCATION</h2>
+        <p>when climbing the carrer ladder</p>
+      </div>
+      <div class="welcome__content">
+        <p>
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, sunt in culpa qui officia deserunt mollit anim
+          id est laboth. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur sunt in culpa qui .
+        </p>
+        <div class="welcome__courses container">
+          <div class="row mx-0">
+            <div
+              class="welcome__col border border-dark mb-4 mb-md-0 col-12 col-md-4"
+            >
+              <div class="welcome__item">
+                <i class="fa fa-desktop"></i>
+                <h3>Design Course</h3>
+                <h4>FASHION DESIGN</h4>
+                <p>Ncididunt ut labore et t enim ad minim.</p>
+                <h4>INTERIOR DESIGN</h4>
+                <p>Ncididunt ut labore et t enim ad minim.</p>
+                <h4>GRAPHIC DESIGN</h4>
+                <p>Ncididunt ut labore et t enim ad minim.</p>
+              </div>
+            </div>
+            <div
+              class="welcome__col border border-dark mb-4 mb-md-0 col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"
+            >
+              <div class="welcome__item">
+                <i class="fa fa-arrows-alt"></i>
+                <h3>Marketing Course</h3>
+                <h4>FACEBOOK MARKETING</h4>
+                <p>Ncididunt ut labore et t enim ad minim.</p>
+                <h4>YOUTUBE MARKETING</h4>
+                <p>Ncididunt ut labore et t enim ad minim.</p>
+                <h4>TWITTER MARKETING</h4>
+                <p>Ncididunt ut labore et t enim ad minim.</p>
+              </div>
+            </div>
+            <div
+              class="welcome__col border border-dark col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"
+            >
+              <div class="welcome__item">
+                <i class="fa fa-chart-bar"></i>
+                <h3>Financial Course</h3>
+                <h4>COMPLEXITIES OF BANKING</h4>
+                <p>Ncididunt ut labore et t enim ad minim.</p>
+                <h4>COMPLIANCE REGULATIONS</h4>
+                <p>Ncididunt ut labore et t enim ad minim.</p>
+                <h4>FINANCE PRODUCTS</h4>
+                <p>Ncididunt ut labore et t enim ad minim.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TEAM -->
+    <section class="team">
+      <div class="heading heading--white">
+        <h2>TEAM</h2>
+        <p>when climbing the carrer ladder</p>
+      </div>
+      <div class="team__content">
+        <div class="team__item">
+          <img src="./img/t1.jpg" alt="t1" />
+          <div class="team__title">
+            <h3>John Simon</h3>
+            <p class="team__text">-Cake Maker</p>
+          </div>
+          <div class="team__details">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
+              perferendis.
+            </p>
+            <div class="team_socials">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-google-plus-g"></i>
+            </div>
+          </div>
+        </div>
+        <div class="team__item team__item2">
+          <img src="./img/t2.jpg" alt="t2" />
+          <div class="team__title">
+            <h3>John Simon</h3>
+            <p class="team__text">-Cake Maker</p>
+          </div>
+          <div class="team__details">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
+              perferendis.
+            </p>
+            <div class="team_socials">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-google-plus-g"></i>
+            </div>
+          </div>
+        </div>
+        <div class="team__item team__item3">
+          <img src="./img/t3.jpg" alt="t3" />
+          <div class="team__title">
+            <h3>John Simon</h3>
+            <p class="team__text">-Cake Maker</p>
+          </div>
+          <div class="team__details">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
+              perferendis.
+            </p>
+            <div class="team_socials">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-google-plus-g"></i>
+            </div>
+          </div>
+        </div>
+        <div class="team__item team__item4">
+          <img src="./img/t4.jpg" alt="t4" />
+          <div class="team__title">
+            <h3>John Simon</h3>
+            <p class="team__text">-Cake Maker</p>
+          </div>
+          <div class="team__details">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
+              perferendis.
+            </p>
+            <div class="team_socials">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-google-plus-g"></i>
+            </div>
+          </div>
+        </div>
+        <div class="team__item team__item5">
+          <img src="./img/t1.jpg" alt="t5" />
+          <div class="team__title">
+            <h3>John Simon</h3>
+            <p class="team__text">-Cake Maker</p>
+          </div>
+          <div class="team__details">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
+              perferendis.
+            </p>
+            <div class="team_socials">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-google-plus-g"></i>
+            </div>
+          </div>
+        </div>
+        <div class="team__item team__item6">
+          <img src="./img/t2.jpg" alt="t6" />
+          <div class="team__title">
+            <h3>John Simon</h3>
+            <p class="team__text">-Cake Maker</p>
+          </div>
+          <div class="team__details">
+            <h3>John Simon</h3>
+            <p>-Cake Maker</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
+              perferendis.
+            </p>
+            <div class="team_socials">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-google-plus-g"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- OUR STATS -->
+    <section class="ourStats section">
+      <div class="heading heading--white">
+        <h2>OUR STATS</h2>
+        <p>when climbing the carrer ladder</p>
+      </div>
+      <div class="ourStats__content container">
+        <div class="row">
+          <div class="col-6 col-lg-3">
+            <div class="ourStats__item">
+              <i class="fa fa-graduation-cap"></i>
+              <h3>Graduates</h3>
+              <p class="counter">45</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="ourStats__item">
+              <i class="fa fa-user"></i>
+              <h3>Certified Staff</h3>
+              <p class="counter">165</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="ourStats__item">
+              <i class="fa fa-users"></i>
+              <h3>Student</h3>
+              <p class="counter">563</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="ourStats__item">
+              <i class="fa fa-trophy"></i>
+              <h3>Awards</h3>
+              <p class="counter">245</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- OFFER -->
+    <section class="offer section">
+      <div class="heading">
+        <h2>WHAT WE OFFER</h2>
+        <p>when climbing the carrer ladder</p>
+      </div>
+      <div class="offer__content container">
+        <div class="row">
+          <div class="col-12 col-lg-4 offer__col">
+            <div class="offer__item">
+              <i class="fa fa-graduation-cap"></i>
+              <h3>UNDERGRADUATE STUDY</h3>
+              <p>
+                Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste
+                natus error sit voluptatem
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 offer__col">
+            <div class="offer__item">
+              <i class="fa fa-book"></i>
+              <h3>PROFESSIONAL STUDY</h3>
+              <p>
+                Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste
+                natus error sit voluptatem
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 offer__col">
+            <div class="offer__item">
+              <i class="fa fa-align-left"></i>
+              <h3>PROGRAMS</h3>
+              <p>
+                Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste
+                natus error sit voluptatem
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 offer__col">
+            <div class="offer__item">
+              <i class="far fa-comment"></i>
+              <h3>ONLINE LEARNING</h3>
+              <p>
+                Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste
+                natus error sit voluptatem
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 offer__col">
+            <div class="offer__item">
+              <i class="far fa-bookmark"></i>
+              <h3>SUMMER SESSION</h3>
+              <p>
+                Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste
+                natus error sit voluptatem
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 offer__col">
+            <div class="offer__item">
+              <i class="fa fa-globe-asia"></i>
+              <h3>GLOBAL EDUCATION</h3>
+              <p>
+                Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste
+                natus error sit voluptatem
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FEEDBACK -->
+    <section class="feedback section">
+      <div class="heading heading--white">
+        <h2>TESTIMONIALS</h2>
+        <p>when climbing the carrer ladder</p>
+      </div>
+      <div class="container">
+        <div class="feedback__content">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="feedback__top">
+                <p>
+                  Sed semper leo metus, a lacinia eros semper at. Etiam sodales
+                  orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="feedback__bottom">
+                <img src="./img/test1.jpg" alt="" />
+                <div class="feedback__name">
+                  <p>Mary Jane</p>
+                  <p>Lorem, ipsum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="feedback__top">
+                <p>
+                  Sed semper leo metus, a lacinia eros semper at. Etiam sodales
+                  orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="feedback__bottom">
+                <img src="./img/test2.jpg" alt="" />
+                <div class="feedback__name">
+                  <p>Peter</p>
+                  <p>Lorem, ipsum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="feedback__top">
+                <p>
+                  Sed semper leo metus, a lacinia eros semper at. Etiam sodales
+                  orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="feedback__bottom">
+                <img src="./img/test3.jpg" alt="" />
+                <div class="feedback__name">
+                  <p>Steven</p>
+                  <p>Lorem, ipsum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="feedback__top">
+                <p>
+                  Sed semper leo metus, a lacinia eros semper at. Etiam sodales
+                  orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="feedback__bottom">
+                <img src="./img/test1.jpg" alt="" />
+                <div class="feedback__name">
+                  <p>Wilson</p>
+                  <p>Lorem, ipsum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="feedback__top">
+                <p>
+                  Sed semper leo metus, a lacinia eros semper at. Etiam sodales
+                  orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="feedback__bottom">
+                <img src="./img/test2.jpg" alt="" />
+                <div class="feedback__name">
+                  <p>Guptill</p>
+                  <p>Lorem, ipsum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- NEWS -->
+    <section class="news section">
+      <div class="heading">
+        <h2>NEWS & EVENTS</h2>
+        <p>when climbing the carrer ladder</p>
+      </div>
+      <div class="news__content container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-5">
+            <img class="img-fluid" src="./img/g7.jpg" alt="" />
+          </div>
+          <!-- mt-3 mt-md-0 
+                if min-width:768px => margin-top:0
+                <768px => margin-top:1rem -->
+          <div class="col-12 col-md-6 col-lg-7 mt-3 mt-md-0">
+            <h3>
+              <a href="#" data-toggle="modal" data-target="#cyberModal"
+                >SIT AMET JUSTO VITAE</a
+              >
+            </h3>
+            <h4>03/01/2021</h4>
+            <p>
+              Proin euismod vehicula vestibulum. Fusce ullamcorper aliquet dolor
+              id egestas. Nulla leo purus, facilisis non cursus ut, egestas sed
+              ipsum.Fusce ullamcorper aliquet dolor id egestas. Nulla leo purus,
+              facilisis non cursus ut, egestas sed ipsum.Fusce ullamcorper
+              aliquet dolor id egestas. Nulla leo purus, facilisis non cursus
+              ut, egestas sed ipsum.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7">
+            <h3>
+              <a href="#" data-toggle="modal" data-target="#cyberModal"
+                >FUSCE SCELERISQUE</a
+              >
+            </h3>
+            <h4>03/01/2021</h4>
+            <p>
+              Proin euismod vehicula vestibulum. Fusce ullamcorper aliquet dolor
+              id egestas. Nulla leo purus, facilisis non cursus ut, egestas sed
+              ipsum.Fusce ullamcorper aliquet dolor id egestas. Nulla leo purus,
+              facilisis non cursus ut, egestas sed ipsum.Fusce ullamcorper
+              aliquet dolor id egestas. Nulla leo purus, facilisis non cursus
+              ut, egestas sed ipsum.
+            </p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+            <img class="img-fluid" src="./img/g10.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__top section">
+        <div class="container">
+          <div class="footer__grid row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <h3>About Us</h3>
+              <p>
+                Nam libero tempore cum vulputate id est id, pretium semper enim.
+                Morbi viverra congue nisi vel pulvinar posuere sapien eros.
+              </p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <h3>Latest News</h3>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Lorem ipsum neque vulputate</a>
+              </div>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Dolor amet sed quam vitae</a>
+              </div>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Lorem ipsum neque vulputate</a>
+              </div>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Dolor amet sed quam vitae</a>
+              </div>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Lorem ipsum neque vulputate</a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <h3>Contact Info</h3>
+              <div class="footer__contact">
+                <i class="fa fa-map-marker-alt"></i>
+                <a href="#">112 Cao Thắng, Quận 3 – HCM</a>
+              </div>
+              <div class="footer__contact">
+                <i class="far fa-envelope"></i>
+                <a href="mailto:info@trannamanh.edu.vn"
+                  >info@trannamanh.edu.vn</a
+                >
+              </div>
+              <div class="footer__contact">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:0961051014">096.105.1014</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__form">
+            <form>
+              <div class="form-group form-row">
+                <label
+                  class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-form-label"
+                  for="emailFooter"
+                  >Sign up for our Newsletter</label
+                >
+                <div class="col-8 col-sm-8 col-md-8 col-lg-6 col-xl-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailFooter"
+                    placeholder="Enter Email Address ..."
+                  />
+                </div>
+                <div
+                  class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 text-center"
+                >
+                  <button type="submit" class="btn">SUBMIT</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div>
+          © 2020 Instruction. All rights reserved | Design by
+          <a href="#">TranNamAnh</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="cyberModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">INSTRUCTION</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="./img/g12.jpg" alt="" />
+            <p>
+              Duis venenatis, turpis eu bibendum porttitor, sapien quam
+              ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac
+              fermentum diam. Integer eu facilisis nunc, a iaculis felis.
+              Pellentesque pellentesque tempor enim, in dapibus turpis porttitor
+              quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus
+              ultrices ullamcorper. Cras tempor massa luctus, varius lacus sit
+              amet, blandit lorem. Duis auctor in tortor sed tristique. Proin
+              sed finibus sem
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Load jQuery first -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- Load jquery.countup.js -->
+    <script src="./js/jquery.countup.js"></script>
+
+    <!-- Your countUp script -->
+    <script>
+      $(document).ready(function () {
+        $(".counter").countUp();
+      });
+    </script>
+
+    <!-- Load Bootstrap's JavaScript bundle -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- Load Owl Carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- Your Owl Carousel script -->
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            576: {
+              items: 2,
+            },
+            1200: {
+              items: 3,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
