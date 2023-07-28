@@ -1,8 +1,22 @@
 /* GLOBAL */
 
 html,
+
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+html *::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgba(22, 24, 35, 0.1611);
+}
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .heading {
@@ -620,19 +634,29 @@ body {
 /* FOOTER */
 
 footer {
-    background-color: #141415;
+    background-image: linear-gradient(0, var(--primary-color), #030d9c);
+}
+
+.footer__logo {
+    max-width: 85%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: -10px;
 }
 
 .footer__top h3 {
     font-size: 24px;
     font-weight: bold;
-    color: #ff4f81;
+    color: var(--while-color);
     letter-spacing: 1px;
     margin-bottom: 1.5rem;
 }
 
 .footer__top p {
-    color: #8b8b96;
+    color: var(--while-color);
     font-size: 15px;
     line-height: 2em;
     margin-bottom: 2rem;
@@ -647,13 +671,13 @@ footer {
 }
 
 .footer__link i {
-    color: #ff4f81;
+    color: var(--while-color);
     margin-right: 1rem;
 }
 
 .footer__link a,
 .footer__contact a {
-    color: #8b8b96;
+    color: var(--while-color);
     text-decoration: none;
     font-size: 15px;
     line-height: 1.5em;
@@ -663,13 +687,12 @@ footer {
 
 .footer__link a:hover,
 .footer__contact a:hover {
-    color: white;
+    color: var(--primary-color-2);
 }
 
 .footer__contact i {
-    width: 32px;
-    height: 32px;
-    border: 1px solid #4b4b50;
+    font-size: 1.3rem;
+    /* border: 1px solid var(--primary-color-2); */
     color: white;
     text-align: center;
     line-height: 32px;
@@ -729,6 +752,38 @@ footer {
     color: white;
 }
 
+.footer__top textarea {
+    margin: 0;
+} 
+
+/* quick contact */
+.quick-contact__input {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    border: 1px solid var(--primary-color-2);
+    color: white;
+    padding: 12px 18px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.quick-contact__form {
+    display: flex;
+}
+
+.quick-contact__button {
+    /* background-image: linear-gradient(0, #52c7e9, #92d5e9); */
+    width: 70px;
+    height: 50px;
+    border: none;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+
+.quick-contact__img {
+    width: 80%;
+    height: auto;
+}
 
 /*********************** RESPONSIVE ************************/
 
