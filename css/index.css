@@ -178,9 +178,14 @@ body {
 }
 
 .navInstruction .navbar-toggler {
-    color: #ff4f81;
+    color: white;
     background-color: black;
     border-radius: 0px;
+}
+
+.navInstruction .navbar-toggler:hover {
+    color: white;
+    background-color: #91C8E4;
 }
 
 .navInstruction .navbar-toggler:focus {
@@ -285,7 +290,6 @@ body {
     text-align: center;
     border: 1px solid #ECECEC;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
-    border-radius: 12px;
 }
 
 #customer-testimonoals .item .shadow-effect img {
@@ -332,7 +336,6 @@ body {
     width: auto;
     background: linear-gradient(135deg, #4786fe, #52c7e9, #4d73ff);
     padding: 9px 35px;
-    border-radius: 12px;
     text-align: center;
     color: #fff;
     box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.12), 0px 5px 7px rgba(0, 0, 0, 0.5);
@@ -349,9 +352,6 @@ body {
         transform: translateY(0);
     }
 }
-
-
-/* Apply the animation to the numbers on hover */
 
 #customer-testimonoals .item:hover .testimonial-name {
     animation: jumpAnimation 0.5s;
@@ -402,7 +402,7 @@ body {
 /* TEAM */
 
 .team {
-    background-image: url("../img/BR-TEAM.png");
+    background-image: url("../img/BR-QT2.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding: 70px 0;
@@ -424,13 +424,13 @@ body {
 .team__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
     gap: 25px 30px;
 }
 
 .team__item img {
-    width: 100%;
+    width: 80%;
     display: block;
 }
 
@@ -453,8 +453,8 @@ body {
     left: 0;
     background-color: #0cbcfb;
     color: white;
-    width: 100%;
-    padding: 30px;
+    width: 80%;
+    padding: 15px;
     opacity: 0.9;
     transition: all .5s;
 }
@@ -463,11 +463,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 100px 40px;
+    padding: 50px 30px;
     opacity: 0;
     transition: all .5s;
 }
@@ -563,7 +563,7 @@ body {
 /* OUR STATS */
 
 .ourStats {
-    background-image: url(../img/banner2.jpg);
+    background-image: url(../img/BBR-T1.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -660,7 +660,7 @@ body {
 .feedback {
     /* background-image: url(../img/banner3.jpg);
     background-position: center; */
-    background: url(../img/banner3.jpg) center;
+    background: url(../img/BR-FB.png) center;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -765,6 +765,12 @@ body {
 
 .news__content img {
     border: 2px solid #dedede;
+}
+
+.news__content .img2 {
+    width: 50%;
+    height: 400px;
+    margin-left: 215px;
 }
 
 .news__content h3 {
@@ -1086,18 +1092,12 @@ footer {
     }
 }
 
-
-/* For screens with a maximum width of 1024px (tablets and smaller) */
-
 @media screen and (max-width: 1024px) {
     .team__content {
         grid-template-columns: repeat(2, 1fr);
         width: 90%;
     }
 }
-
-
-/* For screens with a maximum width of 768px (phones and smaller) */
 
 @media screen and (max-width: 768px) {
     .team__content {
