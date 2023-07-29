@@ -9,7 +9,7 @@
 html,
 
 body {
-    font-family: 'Titillium Web', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 html *::-webkit-scrollbar {
@@ -831,9 +831,7 @@ html *::-webkit-scrollbar-track {
 
 /* Backtotop */
 
-
 /* MODAL */
-
 #cyberModal img {
     width: 100%;
 }
@@ -1308,7 +1306,7 @@ footer {
 
 /* Media query for medium-sized screens */
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
     .team__content {
         grid-template-columns: repeat(2, 1fr);
         /* Display two items per row on medium-sized screens */
@@ -1319,13 +1317,9 @@ footer {
     }
 }
 
-
-@media screen and (max-width: 768px) {
-}
-
 /* Media query for larger screens */
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 768px) {
     .team__content {
         grid-template-columns: repeat(3, 1fr);
         /* Display three items per row on larger screens */
