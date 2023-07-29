@@ -213,7 +213,6 @@ html *::-webkit-scrollbar-track {
     outline: none;
 }
 
-
 /* CAROUSEL */
 
 #carouselCyber .carousel-caption {
@@ -832,9 +831,7 @@ html *::-webkit-scrollbar-track {
 
 /* Backtotop */
 
-
 /* MODAL */
-
 #cyberModal img {
     width: 100%;
 }
@@ -1018,6 +1015,7 @@ footer {
     padding: 12px 18px;
     width: 100%;
     margin-bottom: 5px;
+    outline: none;
 }
 
 .quick-contact__form {
@@ -1027,7 +1025,7 @@ footer {
 .quick-contact__button {
     /* background-image: linear-gradient(0, #52c7e9, #92d5e9); */
     width: 70px;
-    height: 50px;
+    height: 43px;
     border: none;
     margin-left: 5px;
     border-radius: 2px;
@@ -1036,6 +1034,127 @@ footer {
 .quick-contact__img {
     width: 80%;
     height: auto;
+}
+
+/* Quick-call */
+.quick-alo-phone {
+    position: fixed;
+    display: block;
+    bottom: 40px;
+    left: 50px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    background: linear-gradient(to bottom, var(--primary-color-2), var(--primary-color));
+    box-shadow: 1px 5px 7px -2px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    z-index: 999;
+}
+.quick-alo-phone i {
+    font-size: 1.5rem;
+    color: var(--while-color);
+    display: block;
+}
+.quick-alo-phone a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding: 14px;
+    z-index: 1;
+    transition-timing-function: ease-out;
+    transition: all .2s;
+} 
+
+.quick-alo__fill {
+    position: absolute;
+    transform-origin: center;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    border-radius: 50px;
+    background: radial-gradient(rgba(82, 199, 233, 0.1), rgba(82, 199, 233, 0.5));
+    animation: skill5 3s infinite;
+    transition-timing-function: ease-out;
+    display: block;
+    border: 1px solid rgba(71, 134, 254, 0.23);
+}
+
+.quick-alo__border {
+    position: absolute;
+    transform-origin: center;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    border-radius: 50px;
+    background: radial-gradient(rgba(82, 199, 233, 0.1), rgba(82, 199, 233, 0.5));
+    animation: skill6 3s infinite;
+    transition-timing-function: ease-out;
+    display: block;
+    border: 1px solid rgba(71, 134, 254, 0.23);
+}
+
+.quick-alo-zalo {
+    position: fixed;
+    display: block;
+    bottom: 150px;
+    left: 50px;
+    border-radius: 50%;
+    box-shadow: 1px 5px 7px -2px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    z-index: 999;
+}
+
+.quick-alo-zalo img {
+    position: relative;
+    display: block;
+    height: auto;
+    z-index: 999;
+}
+
+@keyframes skill5 {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    30% {
+        opacity: 0.8;
+        transform: scale(1.9);
+    }
+    60% {
+        opacity: 0;
+        transform: scale(1.9);
+    }
+    
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+@keyframes skill6 {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    
+    36% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    66% {
+        opacity: 0.8;
+        transform: scale(2.0);
+    }
+    96% {
+        opacity: 0;
+        transform: scale(2.0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    
 }
 
 /*********************** RESPONSIVE ************************/
@@ -1154,6 +1273,8 @@ footer {
     }
 }
 
+@media screen and (max-width: 1024px) {
+}
 
 /* TEAM */
 
@@ -1185,8 +1306,6 @@ footer {
 
 /* Media query for medium-sized screens */
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-
 @media screen and (max-width: 1024px) {
     .team__content {
         grid-template-columns: repeat(2, 1fr);
@@ -1197,6 +1316,8 @@ footer {
         /* Reset the skew transformation on medium-sized screens */
     }
 }
+
+/* Media query for larger screens */
 
 @media screen and (max-width: 768px) {
     .team__content {
