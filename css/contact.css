@@ -44,10 +44,6 @@
 .contact-page__content a:hover {
     color: var(--primary-color);
 }
-
-.contact-page__content h1{
-    margin-top: 0;
-}
 .contact-page__address,
 .contact-page__email,
 .contact-page__phone {
