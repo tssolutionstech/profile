@@ -47,6 +47,8 @@
 
     <!-- BASE CSS -->
     <link rel="stylesheet" href="./css/base.css">
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -806,7 +808,7 @@ Quản lí kho hàng
     </div>
     <a href="#" class="backToTop cd-top text-replace js-cd-top">
         <i class="fa fa-angle-up"></i>
-      </a>
+    </a>
     <!-- Load jQuery first -->
     <script
       src="https://code.jquery.com/jquery-3.6.4.min.js"
@@ -879,13 +881,50 @@ Quản lí kho hàng
     <!-- BACKTOTOP -->
     <script src="./js/util.js"></script>
     <script src="./js/backtotop.js"></script>
+
+    <!-- quick-call -->
+    <div class="quick-alo-phone hide-on-mobile" >
+        <a href="tel:0815222263" title="Liên hệ nhanh">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <div class="quick-alo__fill"></div>
+        <div class="quick-alo__border"></div>
+    </div>
+    <div class="quick-alo-zalo hide-on-mobile">
+        <a href="#" title="Zalo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="zalo-icon">
+        </a>
+        <div class="quick-alo__fill"></div>
+        <div class="quick-alo__border"></div>
+    </div>
+
+    <!-- BOTTOM MENU MOBILE -->
+    <div class="bottom-menu hide-on-tablet hide-on-lag">
+        <div class="bottom-menu__phone">
+          <a href="tel:0815222263" title="Liên hệ nhanh">
+            <i class="fa-solid fa-phone"></i>
+            <p>Hotline</p>
+          </a>
+        </div>
+  
+        <div class="bottom-menu__zalo">
+          <a href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="zalo-icon">
+          </a>
+        </div>
+  
+        <div class="bottom-menu__messenger">
+          <a href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg" alt="messenger-icon">
+          </a>
+        </div>
+  
+        <div class="bottom-menu__profile">
+          <a href="#">
+            <i class="fa-solid fa-file-invoice"></i>
+          </a>
+        </div>
+    </div>
+    <div class="test_bottom"></div>
   </body>
-  <!-- quick-call -->
-  <div class="quick-alo-phone">
-    <a href="tel:0815222263" title="Liên hệ nhanh">
-        <i class="fa-solid fa-phone"></i>
-    </a>
-    <div class="quick-alo__fill"></div>
-    <div class="quick-alo__border"></div>
-  </div>
 </html>
