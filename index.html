@@ -781,6 +781,24 @@
         <a href="#" class="backToTop cd-top text-replace js-cd-top">
             <i class="fa fa-angle-up"></i>
         </a>
+
+        <!-- nav menu -->
+        <script>
+            const $ = document.querySelector.bind(document)
+            const $$ = document.querySelectorAll.bind(document)
+
+            const navItems = $('.nav-item')
+
+            navItems.forEach((navItem, index) => {
+                navItem.onclick = function () {
+                    $('.nav-item.active').classList.remove('active')
+
+                    this.classList.add('active')
+                }
+            })
+
+        </script>
+
         <!-- Load jQuery first -->
         <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -858,7 +876,7 @@
             <div class="quick-alo__border"></div>
         </div>
         <div class="quick-alo-zalo hide-on-mobile">
-            <a href="#" title="Zalo">
+            <a href="https://zalo.me/841275222263" title="Zalo">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="zalo-icon">
             </a>
             <div class="quick-alo__fill"></div>
@@ -883,7 +901,7 @@
             </div>
     
             <div class="bottom-menu__zalo">
-            <a href="#">
+            <a href="https://zalo.me/841275222263">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="zalo-icon">
             </a>
             </div>
