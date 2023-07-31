@@ -30,6 +30,8 @@
 
     <!-- BASE CSS -->
     <link rel="stylesheet" href="./css/base.css" />
+    <!-- Responsive -->
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
@@ -364,13 +366,13 @@
             <h2>Thông Tin Thống Kê</h2>
             <p></p>
         </div>
-        <div class="ourStats__content">
+        <div class="ourStats__content container">
             <div class="row">
                 <div class="col-6 col-lg-3">
                     <div class="ourStats__item">
                         <img src="./img/rating.png " alt="icon-rating" />
                         <h3>Khách hàng</h3>
-                        <p class="counter d-inline">1000</p>
+                        <p class="counter d-inline">100</p>
                         <sup class="d-inline">+</sup>
                     </div>
                 </div>
@@ -378,7 +380,7 @@
                     <div class="ourStats__item">
                         <img src="./img/target.png " alt="icon-target" />
                         <h3>Dự án đã làm</h3>
-                        <p class="counter d-inline">1900</p>
+                        <p class="counter d-inline">40</p>
                         <sup class="d-inline">+</sup>
                     </div>
                 </div>
@@ -846,14 +848,58 @@
         <!-- BACKTOTOP -->
         <script src="./js/util.js"></script>
         <script src="./js/backtotop.js"></script>
+
+        <!-- quick-call -->
+        <div class="quick-alo-phone hide-on-mobile">
+            <a href="tel:0815222263" title="Liên hệ nhanh">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+            <div class="quick-alo__fill"></div>
+            <div class="quick-alo__border"></div>
+        </div>
+        <div class="quick-alo-zalo hide-on-mobile">
+            <a href="#" title="Zalo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="zalo-icon">
+            </a>
+            <div class="quick-alo__fill"></div>
+            <div class="quick-alo__border"></div>
+        </div>
+
+        <div class="quick-alo-mes hide-on-mobile">
+            <a href="#" title="Messenger">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg" alt="zalo-icon">
+            </a>
+            <div class="quick-alo__fill"></div>
+            <div class="quick-alo__border"></div>
+        </div>
+
+        <!-- BOTTOM MENU MOBILE -->
+        <div class="bottom-menu hide-on-tablet hide-on-lag">
+            <div class="bottom-menu__phone">
+            <a href="tel:0815222263" title="Liên hệ nhanh">
+                <i class="fa-solid fa-phone"></i>
+                <p>Hotline</p>
+            </a>
+            </div>
+    
+            <div class="bottom-menu__zalo">
+            <a href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="zalo-icon">
+            </a>
+            </div>
+    
+            <div class="bottom-menu__messenger">
+            <a href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg" alt="messenger-icon">
+            </a>
+            </div>
+    
+            <div class="bottom-menu__profile">
+            <a href="#">
+                <i class="fa-solid fa-file-invoice"></i>
+            </a>
+            </div>
+        </div>
 </body>
-<!-- quick-call -->
-<div class="quick-alo-phone">
-    <a href="tel:0815222263" title="Liên hệ nhanh">
-        <i class="fa-solid fa-phone"></i>
-    </a>
-    <div class="quick-alo__fill"></div>
-    <div class="quick-alo__border"></div>
-</div>
 
 </html>
