@@ -40,6 +40,7 @@
         background-color: var(--while-color);
         border-top: 1px solid #ccc;
         padding: 10px 0;
+        z-index: 999;
     }
     .bottom-menu__phone a{
         text-decoration: none;
