@@ -949,59 +949,6 @@ footer {
     margin-right: 1rem;
 }
 
-.footer__form {
-    margin-top: 3rem;
-}
-
-.footer__form label {
-    color: #ff4f81;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.footer__form input {
-    padding: 14px;
-    border-radius: 0;
-    border: none;
-    letter-spacing: 1px;
-    color: #888888;
-    height: auto;
-}
-
-.footer__form button {
-    background-color: #ff4f81;
-    padding: 12px 35px;
-    letter-spacing: 1px;
-    border-radius: 0;
-    color: white;
-    outline: none;
-    transition: all 0.5s;
-}
-
-.footer__form button:hover {
-    background-color: #ec1955;
-    color: white;
-}
-
-.footer__bottom {
-    background-color: #0f0f10;
-    text-align: center;
-    padding: 1rem 0;
-    letter-spacing: 1px;
-    color: white;
-}
-
-.footer__bottom a {
-    text-decoration: none;
-    color: #ff4f81;
-    transition: all 0.5s;
-}
-
-.footer__bottom a:hover {
-    color: white;
-}
-
 .footer__top textarea {
     margin: 0;
 } 

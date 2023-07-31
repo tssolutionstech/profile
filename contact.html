@@ -45,6 +45,8 @@
     <link rel="stylesheet" href="./css/contact.css">
     <!-- BASE CSS -->
     <link rel="stylesheet" href="./css/base.css">
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
     <!-- Header -->
@@ -270,21 +272,157 @@
           </div>
         </div>
     </footer>
+    <!-- MODAL -->
+    <div class="modal fade" id="cyberModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">INSTRUCTION</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="./img/g12.jpg" alt="" />
+            <p>
+              Duis venenatis, turpis eu bibendum porttitor, sapien quam
+              ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac
+              fermentum diam. Integer eu facilisis nunc, a iaculis felis.
+              Pellentesque pellentesque tempor enim, in dapibus turpis porttitor
+              quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus
+              ultrices ullamcorper. Cras tempor massa luctus, varius lacus sit
+              amet, blandit lorem. Duis auctor in tortor sed tristique. Proin
+              sed finibus sem
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Load jQuery first -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- Load jquery.countup.js -->
+    <script src="./js/jquery.countup.js"></script>
+
+    <!-- Your countUp script -->
+    <script>
+      $(document).ready(function () {
+        $(".counter").countUp();
+      });
+    </script>
+
+    <!-- Load Bootstrap's JavaScript bundle -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- Load Owl Carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
+    <!-- Your Owl Carousel script -->
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            576: {
+              items: 2,
+            },
+            
+          },
+        });
+      });
+    </script>
+	  <script type="text/javascript">
+		$('#customer-testimonoals').owlCarousel({
+		    loop:true,
+		    center: true,
+		    items:3,
+		    margin:0,
+		    autoplay: true,
+		    dots: true,
+		    autoplayTimeout: 8500,
+		    smartSpeed: 450,
+		    nav:false,
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:3
+		        },
+		        1000:{
+		            items:3
+		        }
+		    }
+		});
+	  </script>
+    <!-- BACKTOTOP -->
+    <script src="./js/util.js"></script>
+    <script src="./js/backtotop.js"></script>
+
     <!-- quick-call -->
     <!-- https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg -->
-    <div class="quick-alo-phone">
+    <div class="quick-alo-phone hide-on-mobile">
         <a href="tel:0815222263" title="Liên hệ nhanh">
             <i class="fa-solid fa-phone"></i>
         </a>
         <div class="quick-alo__fill"></div>
         <div class="quick-alo__border"></div>
     </div>
-    <div class="quick-alo-zalo">
+    <div class="quick-alo-zalo hide-on-mobile">
         <a href="#" title="Zalo">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="zalo-icon">
         </a>
         <div class="quick-alo__fill"></div>
         <div class="quick-alo__border"></div>
     </div>
+
+    <!-- BOTTOM MENU MOBILE -->
+    <div class="bottom-menu hide-on-tablet hide-on-lag">
+      <div class="bottom-menu__phone">
+        <a href="tel:0815222263" title="Liên hệ nhanh">
+          <i class="fa-solid fa-phone"></i>
+          <p>Hotline</p>
+        </a>
+      </div>
+
+      <div class="bottom-menu__zalo">
+        <a href="#">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="zalo-icon">
+        </a>
+      </div>
+
+      <div class="bottom-menu__messenger">
+        <a href="#">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg" alt="messenger-icon">
+        </a>
+      </div>
+
+      <div class="bottom-menu__profile">
+        <a href="#">
+          <i class="fa-solid fa-file-invoice"></i>
+        </a>
+      </div>
+    </div>
+    
 </body>
 </html>
