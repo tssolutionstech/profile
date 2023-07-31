@@ -596,7 +596,7 @@ html *::-webkit-scrollbar-track {
 }
 
 .ourStats__item h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     letter-spacing: 2px;
     font-weight: bold;
     margin: 30px 0 20px;
@@ -721,6 +721,7 @@ html *::-webkit-scrollbar-track {
 
 .feedback__content .feedback__bottom img {
     width: 28%;
+    height: 100%;
     display: inline-block;
 }
 
@@ -997,7 +998,7 @@ footer {
     position: fixed;
     display: block;
     bottom: 40px;
-    left: 50px;
+    left: 30px;
     background-color: var(--primary-color);
     border-radius: 50%;
     background: linear-gradient(to bottom, var(--primary-color-2), var(--primary-color));
@@ -1055,8 +1056,8 @@ footer {
 .quick-alo-zalo {
     position: fixed;
     display: block;
-    bottom: 150px;
-    left: 50px;
+    bottom: 140px;
+    left: 30px;
     border-radius: 50%;
     box-shadow: 1px 5px 7px -2px rgba(0, 0, 0, 0.35);
     cursor: pointer;
@@ -1068,6 +1069,22 @@ footer {
     display: block;
     height: auto;
     z-index: 999;
+}
+
+.quick-alo-mes {
+    position: fixed;
+    display: block;
+    bottom: 240px;
+    left: 30px;
+    border-radius: 50%;
+    box-shadow: 1px 5px 7px -2px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    z-index: 999;
+}
+
+.quick-alo-mes img {
+    width: 52px;
+    height: 52px;
 }
 
 @keyframes skill5 {
@@ -1249,16 +1266,31 @@ footer {
         padding-bottom: 1rem;
     }
     .welcome__item h3 {
+        display: flex;
+        justify-content: center;
         font-size: 1.5rem;
     }
     .welcome__item h4 {
         font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
     }
     .welcome__item p {
         font-size: 0.9rem;
+        display: flex;
+        justify-content: center;
+    }
+    .welcome__item img {
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
     }
     .welcome__col {
         padding: 0.5rem;
+    }
+
+    .hide-on-mobile {
+        display: none;
     }
 }
 

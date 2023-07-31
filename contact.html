@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="./css/contact.css">
     <!-- BASE CSS -->
     <link rel="stylesheet" href="./css/base.css">
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
@@ -39,10 +41,9 @@
     <header>
         <div class="header__top d-flex justify-content-between align-items-center container-fluid py-2">
             <div class="header__left">
-                <a href="tel:0815222263" class="text-white mr-4"><i class="fas fa-phone-alt"></i> 0815222263</a
-          >
-          <a href="mailto:ts.solutions.tech@gmail.com" class="text-white"
-            ><i class="far fa-envelope"></i> ts.solutions.tech@gmail.com</a
+                <!-- <a href="tel:0815222263" class="text-white mr-4"><i class="fas fa-phone-alt"></i> 0815222263</a
+          > -->
+                <a href="mailto:ts.solutions.tech@gmail.com" class="text-white"><i class="far fa-envelope"></i> ts.solutions.tech@gmail.com</a
           >
         </div>
         <div class="header__right">
@@ -54,7 +55,7 @@
         </div>
         <nav class="navInstruction navbar navbar-expand-md container">
             <a class="navbar-brand text-center" href="#">
-                <img src="./img/logo-primary.png" alt="Instruction Logo" class="img-fluid" style="max-width: 80px" />
+                <img src="./img/logo-primary.png" alt="logo-primary" class="img-fluid" style="max-width: 80px" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarInstruction" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
@@ -64,12 +65,8 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="./index.html">Trang Chủ</a>
                     </li>
-                    <li class="nav-item nav-service">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Dịch Vụ</a>
-                        <!-- service list -->
-                        <div class="nav-service__list">
-
-                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Đối Tác</a>
@@ -85,8 +82,7 @@
                 Sản Phẩm
               </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">FarmStay</a>
-                            <a class="dropdown-item" href="#">Booking Warranty</a>
+                            <a class="dropdown-item" href="#">Smart door lock</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -268,19 +264,54 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <!-- https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg -->
-    <div class="quick-alo-phone">
+    <div class="quick-alo-phone hide-on-mobile">
         <a href="tel:0815222263" title="Liên hệ nhanh">
             <i class="fa-solid fa-phone"></i>
         </a>
         <div class="quick-alo__fill"></div>
         <div class="quick-alo__border"></div>
     </div>
-    <div class="quick-alo-zalo">
+    <div class="quick-alo-zalo hide-on-mobile">
         <a href="#" title="Zalo">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="zalo-icon">
         </a>
         <div class="quick-alo__fill"></div>
         <div class="quick-alo__border"></div>
+    </div>
+    <div class="quick-alo-mes hide-on-mobile">
+        <a href="#" title="Messenger">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg" alt="zalo-icon">
+        </a>
+        <div class="quick-alo__fill"></div>
+        <div class="quick-alo__border"></div>
+    </div>
+
+    <!-- BOTTOM MENU MOBILE -->
+    <div class="bottom-menu hide-on-tablet hide-on-lag">
+        <div class="bottom-menu__phone">
+        <a href="tel:0815222263" title="Liên hệ nhanh">
+            <i class="fa-solid fa-phone"></i>
+            <p>Hotline</p>
+        </a>
+        </div>
+
+        <div class="bottom-menu__zalo">
+        <a href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="zalo-icon">
+        </a>
+        </div>
+
+        <div class="bottom-menu__messenger">
+        <a href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg" alt="messenger-icon">
+        </a>
+        </div>
+
+        <div class="bottom-menu__profile">
+        <a href="#">
+            <i class="fa-solid fa-file-invoice"></i>
+        </a>
+        </div>
     </div>
 </body>
 
