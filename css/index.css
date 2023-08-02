@@ -1019,6 +1019,13 @@ footer {
     z-index: 999;
 }
 
+.quick-alo-phone:hover,
+.quick-alo-zalo:hover,
+.quick-alo-mes:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
 .quick-alo-phone i {
     font-size: 1.5rem;
     color: var(--while-color);
@@ -1031,8 +1038,6 @@ footer {
     text-decoration: none;
     padding: 14px;
     z-index: 1;
-    transition-timing-function: ease-out;
-    transition: all .2s;
 }
 
 .quick-alo__fill {

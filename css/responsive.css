@@ -100,4 +100,13 @@
     .heading h2 {
         font-size: 1.6rem;
     }
+    .footer__logo {
+        width: 100%;
+        margin: -60px auto 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .footer__bottom {
+        margin-bottom: 61px;
+    }
 }
