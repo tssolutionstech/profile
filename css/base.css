@@ -7,3 +7,29 @@
     --black-color: #000;
     --text-color: #152C47;
 }
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.pr-40 {
+    padding-right: 40px;
+}
+
+.pl-40 {
+    padding-left: 40px;
+}
+
+.hr-head {
+    border: none;
+    border-top: 1px solid #b8b8b8;
+    margin: 0;
+}

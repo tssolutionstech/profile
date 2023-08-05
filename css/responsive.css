@@ -17,9 +17,18 @@
 /* Tablet */
 
 @media (min-width: 740px) and (max-width: 1023px) {
-   .hide-on-tablet {
+    .hide-on-tablet {
        display: none;
-   }
+    }
+    .aboutus-content__reverse {
+        flex-direction: column-reverse;
+    }
+    .aboutus-content__description {
+        margin-top: 30px;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
 }
 
 
@@ -69,6 +78,7 @@
         height: 40px;
     }
     .bottom-menu__profile {
+        display: none;
 
     }
     .bottom-menu__profile i {
@@ -109,4 +119,37 @@
     .footer__bottom {
         margin-bottom: 61px;
     }
+    .aboutus-content__reverse {
+        flex-direction: column-reverse;
+    }
+    .aboutus-content__description {
+        margin-top: 30px;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .content {
+        
+    }
+    
+    .content .item {
+        
+    }
+    
+    .content .h1_text {
+        text-align: center;
+    }
+    .content p {
+        text-align: center;
+    }
+    
+    .content__icon {
+        display: flex;
+        justify-content: center;
+    }
+    .content img {
+        
+    }
 }
+
+/*  */

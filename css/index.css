@@ -34,7 +34,7 @@ html *::-webkit-scrollbar-track {
 }
 
 .heading h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--primary-color);
     font-weight: bold;
     letter-spacing: 0.5px;
@@ -483,7 +483,6 @@ html *::-webkit-scrollbar-track {
 }
 
 .team__title {
-    position: absolute;
     bottom: 0;
     left: 0;
     background-color: var(--primary-color);
