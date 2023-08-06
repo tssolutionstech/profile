@@ -192,3 +192,24 @@ body {
     padding: 1rem;
   }
 }
+
+.back_btn {
+  display: block;
+  margin-top: 40px;
+  background-color: #1CA7D4;
+  border: none;
+  border-radius: 30px;
+}
+
+.back_btn a {
+  display: block;
+  text-decoration: none;
+  color: var(--while-color);
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 14px 30px;
+}
+
+.back_btn:hover {
+  opacity: 0.8;
+}
