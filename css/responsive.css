@@ -29,6 +29,10 @@
         padding: 0;
         text-align: center;
     }
+    .comingsoon h1 {
+        font-size: 5rem !important;
+        text-align: center;
+    }
 }
 
 
@@ -128,14 +132,6 @@
         padding: 0;
         text-align: center;
     }
-    .content {
-        
-    }
-    
-    .content .item {
-        
-    }
-    
     .content .h1_text {
         text-align: center;
     }
@@ -147,8 +143,12 @@
         display: flex;
         justify-content: center;
     }
-    .content img {
-        
+    .comingsoon h1 {
+        font-size: 3rem !important;
+        text-align: center;
+    }
+    .comingsoon h2 {
+        text-align: center;
     }
 }
 
