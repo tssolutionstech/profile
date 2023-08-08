@@ -34,6 +34,19 @@
     <link rel="stylesheet" href="./css/base.css">
     <!-- responsive -->
     <link rel="stylesheet" href="./css/responsive.css">
+
+    <script src="contact.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // process.evn
+        emailjs.init("H-Reqc36kbLoQRG8K");
+      })();
+    </script>
 </head>
 
 <body>
@@ -137,31 +150,32 @@
         </div>
         <!-- quick-contact-form -->
         <div class="contact-page__form col-12 col-sm-12 col-md-6 col-lg-6">
-            <input type="text" class="contact-page__input" placeholder="Tên">
-            <input type="number" class="contact-page__input" placeholder="Số điện thoại">
-            <input type="email" class="contact-page__input" placeholder="Email">
-            <input type="text" class="contact-page__input" placeholder="Lĩnh vực kinh doanh">
+            
+                <input type="text" class="contact-page__input" placeholder="Tên">
+                <input type="number" class="contact-page__input" placeholder="Số điện thoại">
+                <input type="email" class="contact-page__input" placeholder="Email">
+                <input type="text" class="contact-page__input" placeholder="Lĩnh vực kinh doanh">
 
-            <select class="contact-page__input" placeholder="kinh phí dự kiến">
-                <option value="50 -> 100 triệu">kinh phí dự kiến</option>
-                <option value="50 -> 100 triệu">0 -&gt; 50 triệu</option>
-                <option value="50 -> 100 triệu">50 -&gt; 100 triệu</option>
-                <option value="50 -> 100 triệu">100 -&gt; 150 triệu</option>
-                <option value="50 -> 100 triệu">150 -&gt; 200 triệu</option>
-                <option value="50 -> 100 triệu">200 -&gt; 250 triệu</option>
-                <option value="50 -> 100 triệu">250 -&gt; 300 triệu</option>
-                <option value="50 -> 100 triệu">300 -&gt; 350 triệu</option>
-                <option value="50 -> 100 triệu">350 -&gt; 400 triệu</option>
-                <option value="50 -> 100 triệu">&gt; 400 triệu</option>
-                
-            </select>
-            <textarea class="contact-page__input" rows="4" placeholder="Nội dung..."></textarea>
-            <button class="contact-page__btn"> Gửi yêu cầu
-            </button>
+                <select class="contact-page__input" placeholder="kinh phí dự kiến">
+                    <option value="50 -> 100 triệu">kinh phí dự kiến</option>
+                    <option value="50 -> 100 triệu">0 -&gt; 50 triệu</option>
+                    <option value="50 -> 100 triệu">50 -&gt; 100 triệu</option>
+                    <option value="50 -> 100 triệu">100 -&gt; 150 triệu</option>
+                    <option value="50 -> 100 triệu">150 -&gt; 200 triệu</option>
+                    <option value="50 -> 100 triệu">200 -&gt; 250 triệu</option>
+                    <option value="50 -> 100 triệu">250 -&gt; 300 triệu</option>
+                    <option value="50 -> 100 triệu">300 -&gt; 350 triệu</option>
+                    <option value="50 -> 100 triệu">350 -&gt; 400 triệu</option>
+                    <option value="50 -> 100 triệu">&gt; 400 triệu</option>
+                    
+                </select>
+                <textarea class="contact-page__input" rows="4" placeholder="Nội dung..."></textarea>
+                <button class="contact-page__btn" onclick="sendEmail()"> Gửi yêu cầu</button>
+         
         </div>
 
     </div>
-
+   
     <!-- FOOTER -->
     <footer>
         <div class="footer__top section">
