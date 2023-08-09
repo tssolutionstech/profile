@@ -34,6 +34,19 @@
     <link rel="stylesheet" href="./css/base.css">
     <!-- responsive -->
     <link rel="stylesheet" href="./css/responsive.css">
+
+    <script src="contact.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // process.evn
+        emailjs.init("H-Reqc36kbLoQRG8K");
+      })();
+    </script>
 </head>
 
 <body>
@@ -56,7 +69,7 @@
             </div>
         </div>
         <nav class="navInstruction navbar navbar-expand-md container">
-            <a class="navbar-brand text-center" href="#">
+            <a class="navbar-brand text-center" href="./index.html">
                 <img src="./img/logo-primary.png" alt="logo-primary" class="img-fluid" style="max-width: 80px" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarInstruction" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -137,31 +150,33 @@
         </div>
         <!-- quick-contact-form -->
         <div class="contact-page__form col-12 col-sm-12 col-md-6 col-lg-6">
-            <input type="text" class="contact-page__input" placeholder="Tên">
-            <input type="number" class="contact-page__input" placeholder="Số điện thoại">
-            <input type="email" class="contact-page__input" placeholder="Email">
-            <input type="text" class="contact-page__input" placeholder="Lĩnh vực kinh doanh">
+            
+                <input type="text" class="contact-page__input" placeholder="Tên">
+                <input type="number" class="contact-page__input" placeholder="Số điện thoại">
+                <input type="email" class="contact-page__input" placeholder="Email">
+                <input type="text" class="contact-page__input" placeholder="Lĩnh vực kinh doanh">
 
-            <select class="contact-page__input" placeholder="kinh phí dự kiến">
-                <option value="50 -> 100 triệu">kinh phí dự kiến</option>
-                <option value="50 -> 100 triệu">0 -&gt; 50 triệu</option>
-                <option value="50 -> 100 triệu">50 -&gt; 100 triệu</option>
-                <option value="50 -> 100 triệu">100 -&gt; 150 triệu</option>
-                <option value="50 -> 100 triệu">150 -&gt; 200 triệu</option>
-                <option value="50 -> 100 triệu">200 -&gt; 250 triệu</option>
-                <option value="50 -> 100 triệu">250 -&gt; 300 triệu</option>
-                <option value="50 -> 100 triệu">300 -&gt; 350 triệu</option>
-                <option value="50 -> 100 triệu">350 -&gt; 400 triệu</option>
-                <option value="50 -> 100 triệu">&gt; 400 triệu</option>
-                
-            </select>
-            <textarea class="contact-page__input" rows="4" placeholder="Nội dung..."></textarea>
-            <button class="contact-page__btn"> Gửi yêu cầu
-            </button>
+                <select class="contact-page__input" placeholder="kinh phí dự kiến">
+                    <option value="kinh phí dự kiến">kinh phí dự kiến</option>
+                    <option value="0 -&gt; 50 triệu">0 -&gt; 50 triệu</option>
+                    <option value="50 -&gt; 100 triệu">50 -&gt; 100 triệu</option>
+                    <option value="100 -&gt; 150 triệu">100 -&gt; 150 triệu</option>
+                    <option value="150 -&gt; 200 triệu">150 -&gt; 200 triệu</option>
+                    <option value="200 -&gt; 250 triệu">200 -&gt; 250 triệu</option>
+                    <option value="250 -&gt; 300 triệu">250 -&gt; 300 triệu</option>
+                    <option value="300 -> 350 triệu">300 -&gt; 350 triệu</option>
+                    <option value="350 -&gt; 400 triệu">350 -&gt; 400 triệu</option>
+                    <option value="&gt; 400 triệu">&gt; 400 triệu</option>
+                    
+                </select>
+                <div id="selectedBudget"></div>
+                <textarea class="contact-page__input" rows="4" placeholder="Nội dung..."></textarea>
+                <button class="contact-page__btn" onclick="sendEmail()"> Gửi yêu cầu</button>
+         
         </div>
 
     </div>
-
+   
     <!-- FOOTER -->
     <footer>
         <div class="footer__top section">
@@ -250,21 +265,21 @@
                         <input type="text" class="quick-contact__input" placeholder="Lĩnh vực kinh doanh">
 
                         <select class="quick-contact__input" placeholder="kinh phí dự kiến">
-                            <option value="50 -> 100 triệu">kinh phí dự kiến</option>
-                            <option value="50 -> 100 triệu">0 -&gt; 50 triệu</option>
-                            <option value="50 -> 100 triệu">50 -&gt; 100 triệu</option>
-                            <option value="50 -> 100 triệu">100 -&gt; 150 triệu</option>
-                            <option value="50 -> 100 triệu">150 -&gt; 200 triệu</option>
-                            <option value="50 -> 100 triệu">200 -&gt; 250 triệu</option>
-                            <option value="50 -> 100 triệu">250 -&gt; 300 triệu</option>
-                            <option value="50 -> 100 triệu">300 -&gt; 350 triệu</option>
-                            <option value="50 -> 100 triệu">350 -&gt; 400 triệu</option>
-                            <option value="50 -> 100 triệu">&gt; 400 triệu</option>
+                            <option value="kinh phí dự kiến">kinh phí dự kiến</option>
+                            <option value="0 -&gt; 50 triệu">0 -&gt; 50 triệu</option>
+                            <option value="50 -&gt; 100 triệu">50 -&gt; 100 triệu</option>
+                            <option value="100 -&gt; 150 triệu">100 -&gt; 150 triệu</option>
+                            <option value="150 -&gt; 200 triệu">150 -&gt; 200 triệu</option>
+                            <option value="200 -&gt; 250 triệu">200 -&gt; 250 triệu</option>
+                            <option value="250 -&gt; 300 triệu">250 -&gt; 300 triệu</option>
+                            <option value="300 -&gt; 350 triệu">300 -&gt; 350 triệu</option>
+                            <option value="350 -&gt; 400 triệu">350 -&gt; 400 triệu</option>
+                            <option value="> 400 triệu">&gt; 400 triệu</option>
                         </select>
                         <input type="email" class="quick-contact__input" placeholder="Email">
                         <div class="quick-contact__form">
                             <input type="number" class="quick-contact__input" placeholder="Số điện thoại">
-                            <button class="quick-contact__button">
+                            <button class="quick-contact__button" onclick="sendEmail()">
                                 <img class="quick-contact__img" src="./img/paper.png" alt="icon">
                             </button>
                         </div>
@@ -288,6 +303,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <!-- https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg -->
+    <!-- quick-call -->
     <div class="quick-alo-phone hide-on-mobile">
         <a href="tel:0815222263" title="Liên hệ nhanh">
             <i class="fa-solid fa-phone"></i>
@@ -302,39 +318,40 @@
         <div class="quick-alo__fill"></div>
         <div class="quick-alo__border"></div>
     </div>
-    <div class="quick-alo-mes hide-on-mobile">
+
+    <!-- <div class="quick-alo-mes hide-on-mobile">
         <a href="#" title="Messenger">
             <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg" alt="zalo-icon">
         </a>
         <div class="quick-alo__fill"></div>
         <div class="quick-alo__border"></div>
-    </div>
+    </div> -->
 
     <!-- BOTTOM MENU MOBILE -->
     <div class="bottom-menu hide-on-tablet hide-on-lag">
         <div class="bottom-menu__phone">
-        <a href="tel:0815222263" title="Liên hệ nhanh">
-            <i class="fa-solid fa-phone"></i>
-            <p>Hotline</p>
-        </a>
+            <a href="tel:0815222263" title="Liên hệ nhanh">
+                <i class="fa-solid fa-phone"></i>
+                <p>Hotline</p>
+            </a>
         </div>
 
         <div class="bottom-menu__zalo">
-        <a href="https://zalo.me/841275222263">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="zalo-icon">
-        </a>
+            <a href="https://zalo.me/841275222263">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="zalo-icon">
+            </a>
         </div>
 
-        <div class="bottom-menu__messenger">
-        <a href="#">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg" alt="messenger-icon">
-        </a>
-        </div>
+        <!-- <div class="bottom-menu__messenger">
+            <a href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg" alt="messenger-icon">
+            </a>
+        </div> -->
 
         <div class="bottom-menu__profile">
-        <a href="#">
-            <i class="fa-solid fa-file-invoice"></i>
-        </a>
+            <a href="#">
+                <i class="fa-solid fa-file-invoice"></i>
+            </a>
         </div>
     </div>
 </body>
