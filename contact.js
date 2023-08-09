@@ -1,10 +1,29 @@
 function sendEmail() {
-    var name = document.querySelector('.contact-page__input[placeholder="Tên"]').value;
-    var phone = document.querySelector('.contact-page__input[placeholder="Số điện thoại"]').value;
-    var email = document.querySelector('.contact-page__input[placeholder="Email"]').value;
-    var businessField = document.querySelector('.contact-page__input[placeholder="Lĩnh vực kinh doanh"]').value;
-    var budget = document.querySelector('.contact-page__input[placeholder="kinh phí dự kiến"]').value;
-    var content = document.querySelector('.contact-page__input[placeholder="Nội dung..."]').value;
+    var nameInput = document.querySelector('.contact-page__input[placeholder="Tên"]');
+    var name = nameInput ? nameInput.value : '';
+    
+    var phoneInput = document.querySelector('.contact-page__input[placeholder="Số điện thoại"]');
+    var phone = phoneInput ? phoneInput.value : '';
+    
+    var emailInput = document.querySelector('.contact-page__input[placeholder="Email"]');
+    var email = emailInput ? emailInput.value : '';
+    
+    var businessFieldInput = document.querySelector('.contact-page__input[placeholder="Lĩnh vực kinh doanh"]');
+    var businessField = businessFieldInput ? businessFieldInput.value : '';
+    
+    var budgetInput = document.querySelector('.contact-page__input[placeholder="kinh phí dự kiến"]');
+    var budget = budgetInput ? budgetInput.value : '';
+    
+    var contentInput = document.querySelector('.contact-page__input[placeholder="Nội dung..."]');
+    var content = contentInput ? contentInput.value : '';
+    
+
+    // quick-contact__input
+    var phone_2 = document.querySelector('.quick-contact__input[placeholder="Số điện thoại"]').value;
+    var email_2 = document.querySelector('.quick-contact__input[placeholder="Email"]').value;
+    var businessField_2 = document.querySelector('.quick-contact__input[placeholder="Lĩnh vực kinh doanh"]').value;
+    var budget_2 = document.querySelector('.quick-contact__input[placeholder="kinh phí dự kiến"]').value;
+    var content_2 = document.querySelector('.quick-contact__input[placeholder="Mô tả ngắn ý tưởng của bạn..."]').value;
 
     const serviceID = "service_tphutli";
     const templateID = "template_tgy5esg";
@@ -18,6 +37,22 @@ function sendEmail() {
         budget: budget,
         content: content,
     };
+
+    if (phone_2) {
+        templateParams.phone = phone_2;
+    }
+    if (email_2) {
+        templateParams.email = email_2;
+    }
+    if (businessField_2) {
+        templateParams.business_field = businessField_2;
+    }
+    if (budget_2) {
+        templateParams.budget = budget_2;
+    }
+    if (content_2) {
+        templateParams.content = content_2;
+    }
 
     emailjs.send(serviceID, templateID, templateParams)
         .then(function(response) {
