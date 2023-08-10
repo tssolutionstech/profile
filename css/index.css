@@ -1,15 +1,8 @@
 /* GLOBAL */
 
- :root {
-    --primary-color: #4d73ff;
-    --hover-color: #91C8E4;
-    --second-color: #0cbcfb;
-    --text-color: #ffffff
-}
-
 html,
 body {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
@@ -43,7 +36,7 @@ html *::-webkit-scrollbar-track {
 .heading p {
     text-transform: capitalize;
     letter-spacing: 4px;
-    color: black;
+    color: var(--text-color);
     font-size: 1.1rem;
 }
 
@@ -280,11 +273,10 @@ html *::-webkit-scrollbar-track {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.7rem;
-    /* 1em = 15px */
-    line-height: 1.8em;
-    color: #381313;
-    letter-spacing: 1px;
+    font-size: 1.5rem;
+    /* line-height: 1.8em; */
+    color: var(--text-color);
+    /* letter-spacing: 1px; */
     padding: 1rem 0 5rem;
 }
 
@@ -640,15 +632,15 @@ html *::-webkit-scrollbar-track {
 
 .offer__item {
     padding: 25px 40px;
-    box-shadow: 0px 1px 8px 0px rgba(158, 158, 158, 0.75);
-    box-shadow: 0 0 5px 5px var(--second-color);
+    box-shadow: 0px 1px 8px 0px var(--primary-color);
+    box-shadow: 0 0 5px 5px var(--primary-color);
     text-align: center;
     background-color: white;
     transition: all 0.5s;
 }
 
 .offer__item:hover {
-    background-color: var(--second-color);
+    background-color: var(--primary-color);
 }
 
 .offer__item img {
@@ -659,6 +651,8 @@ html *::-webkit-scrollbar-track {
 .offer__item h3 {
     color: var(--primary-color);
     margin: 25px 0 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .offer__item p {
@@ -971,6 +965,13 @@ footer {
     color: white;
 }
 
+.footer__grid select {
+    padding: 12px 14px;
+}
+
+.footer__grid textarea {
+    margin-bottom: 0;
+}
 
 /* quick contact */
 
@@ -995,6 +996,12 @@ footer {
     border: none;
     margin-left: 5px;
     border-radius: 2px;
+    background: linear-gradient(to bottom, var(--while-color), #cfcfcf);
+    outline: none !important;
+}
+
+.quick-contact__button:hover {
+    opacity: 0.8;
 }
 
 .quick-contact__img {
