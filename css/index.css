@@ -27,7 +27,7 @@ html *::-webkit-scrollbar-track {
 }
 
 .heading h2 {
-    font-size: 3rem;
+    font-size: 1.75rem;
     color: var(--primary-color);
     font-weight: bold;
     letter-spacing: 0.5px;
@@ -35,9 +35,9 @@ html *::-webkit-scrollbar-track {
 
 .heading p {
     text-transform: capitalize;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 @keyframes glowing {
@@ -197,6 +197,7 @@ html *::-webkit-scrollbar-track {
 }
 
 #navbarInstruction .dropdown-item {
+    font-size: 14px;
     color: white;
     transition: all 0.5s;
 }
@@ -226,13 +227,13 @@ html *::-webkit-scrollbar-track {
 /* CAROUSEL */
 
 #carouselCyber .carousel-caption {
-    top: 55%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 #carouselCyber .carousel-caption h1 {
-    font-size: 100px;
+    font-size: 3rem;
 }
 
 #carouselCyber .carousel-caption p {
@@ -273,33 +274,33 @@ html *::-webkit-scrollbar-track {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     /* line-height: 1.8em; */
     color: var(--text-color);
     /* letter-spacing: 1px; */
-    padding: 1rem 0 5rem;
+    padding: 1rem 0 1rem;
 }
 
 .welcome__item h3 {
     color: var(--primary-color);
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1.25rem;
     margin: 1rem 0;
 }
 
 .welcome__item h4 {
     color: black;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 1rem 0 0.2rem;
 }
 
 .welcome__item p {
     color: #999;
     font-size: 1rem;
-    line-height: 1.8em;
+    line-height: 1.0625em;
     margin: 10px 0 0;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 .welcome__item img {
@@ -599,7 +600,7 @@ html *::-webkit-scrollbar-track {
 }
 
 .ourStats__item h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     letter-spacing: 2px;
     font-weight: bold;
     margin: 30px 0 20px;
@@ -617,7 +618,7 @@ html *::-webkit-scrollbar-track {
 }
 
 .ourStats__item p {
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 2px;
     font-weight: 300;
     color: var(--primary-color);
@@ -762,7 +763,7 @@ html *::-webkit-scrollbar-track {
 .feedback__name p:first-child {
     color: white;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .feedback__content .owl-theme .owl-dots .owl-dot span {
@@ -803,7 +804,7 @@ html *::-webkit-scrollbar-track {
     color: black;
     letter-spacing: 1px;
     transition: all 0.5s;
-    font-size: 1.2em;
+    font-size: 1rem;
 }
 
 .news__content a:hover {
@@ -1266,14 +1267,14 @@ footer {
 
 @media (max-width: 768px) {
     .welcome__content>p {
-        font-size: 1.4rem;
+        font-size: 1rem;
         padding-bottom: 2rem;
     }
     .welcome__item h3 {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
     .welcome__item h4 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .welcome__item p {
         font-size: 1rem;
@@ -1285,7 +1286,7 @@ footer {
 
 @media (max-width: 480px) {
     .welcome__content>p {
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding-bottom: 1rem;
     }
     .welcome__item h3 {
