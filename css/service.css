@@ -10,8 +10,13 @@
   /* margin-left: 100px; */
 }
 
+.content h1 {
+  font-size: 20px;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
 .content p {
-  font-size: 18px;
+  font-size: 16px;
   flex-wrap: wrap;
 }
 
